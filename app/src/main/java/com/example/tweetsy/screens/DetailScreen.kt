@@ -21,6 +21,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.tweetsy.viewmodels.CategoryViewModel
 import com.example.tweetsy.viewmodels.TweetViewModel
 
+//✅ STEP 6: Create the Screens
 @Composable
 fun detailScreen(){
 

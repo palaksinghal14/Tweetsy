@@ -10,7 +10,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
-
+// ✅ STEP 3: Define the API instance (Retrofit)
 //isme hum dependencies create krte h using hilt for api , retrofit
 @Module
 @InstallIn(SingletonComponent::class )

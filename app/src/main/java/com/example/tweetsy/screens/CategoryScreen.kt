@@ -32,10 +32,11 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.tweetsy.viewmodels.CategoryViewModel
 
-
+//✅ STEP 6: Create the Screens
 
     @Composable
-    // basically jaise hum screen pe alag alag categpry ke item rakhenge
+
+    // basically jaise hum screen pe alag alag category ke item rakhenge
     fun CategoryScreen(onClick:(category:String)-> Unit) {
         // API CALLL
         val categoryviewmodel: CategoryViewModel = hiltViewModel() // here we making a object of categoryviewmodel class using hiltviewmodel because navigation is craeting a object for viewmodel through hilt
@@ -52,7 +53,6 @@ import com.example.tweetsy.viewmodels.CategoryViewModel
             items(categories.value.distinct()) {
                 CategoryItem(it,onClick)
             }
-
         }
     }
 
@@ -69,8 +69,6 @@ import com.example.tweetsy.viewmodels.CategoryViewModel
                     onClick(category)
          },
          contentAlignment = Alignment.BottomCenter
-
-
      ){
          Text(text = category,
              fontSize = 30.sp,

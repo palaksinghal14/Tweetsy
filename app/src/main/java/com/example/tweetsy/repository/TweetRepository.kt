@@ -9,7 +9,7 @@ import javax.inject.Inject
 
 
 // isme hum apne functions ko implement krdete h mtlb jo humne interface me function define kre ho unko yha implement krte h , jitne bhi ho sare
-// ✅ STEP 3: Create the Repository
+// ✅ STEP 4: Create the Repository
 // This is the layer between ViewModel and ApiService
 // We inject ApiService using constructor injection so Hilt can provide it automatically
 class TweetRepository @Inject constructor( private val tweetsyApi: TweetsyApi) {

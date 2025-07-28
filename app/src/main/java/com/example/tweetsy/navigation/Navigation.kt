@@ -10,6 +10,7 @@ import com.example.tweetsy.screens.CategoryScreen
 import com.example.tweetsy.screens.detailScreen
 import java.util.Locale.Category
 
+//✅ STEP 7: SetUp Navigation between screens
 @Composable
 fun App(){
     val navController= rememberNavController() // method to create a new navcrontroller
