@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("com.google.dagger.hilt.android")
     id("org.jetbrains.kotlin.kapt")
+    id("com.google.gms.google-services")
 
 }
 
@@ -84,6 +85,13 @@ dependencies {
 
     // ✅ Hilt Navigation (for Compose)
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
+
+    // firebase bom
+    implementation(platform("com.google.firebase:firebase-bom:34.2.0"))
+
+    // firebase authentication
+    implementation("com.google.firebase:firebase-auth")
+
     implementation("androidx.compose.material3:material3")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
@@ -92,4 +100,4 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
-}
+} 
