@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "969603982740",
+    "project_id": "tweetsy-757ad",
+    "storage_bucket": "tweetsy-757ad.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969603982740:android:5f8c045d0cb61b77aa5b81",
+        "android_client_info": {
+          "package_name": "com.example.tweetsy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB06GYLVRXoINRRCRJ_kD8eY-595H_gCvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
