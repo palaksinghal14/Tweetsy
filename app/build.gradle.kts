@@ -4,6 +4,7 @@ plugins {
     id("com.google.dagger.hilt.android")
     id("org.jetbrains.kotlin.kapt")
     id("com.google.gms.google-services")
+    id("org.jetbrains.kotlin.plugin.compose") // for composeextentsioncompilerversion
 
 }
 
@@ -43,9 +44,7 @@ android {
     buildFeatures {
         compose = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
-    }
+
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
@@ -87,7 +86,7 @@ dependencies {
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
 
     // firebase bom
-    implementation(platform("com.google.firebase:firebase-bom:34.2.0"))
+    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
 
     // firebase authentication
     implementation("com.google.firebase:firebase-auth")

@@ -9,12 +9,15 @@ import org.jetbrains.annotations.ApiStatus
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
+import com.google.firebase.auth.FirebaseAuth // import this for firebase
 
 // ✅ STEP 3: Define the API instance (Retrofit)
 //isme hum dependencies create krte h using hilt for api , retrofit
 @Module
 @InstallIn(SingletonComponent::class )
 object NetworkModule {
+
+    // Retrofit instance
     @Provides
     @Singleton
     fun provideRetrofit(): Retrofit{
@@ -29,5 +32,10 @@ object NetworkModule {
     fun provideTweetsyApi(retrofit: Retrofit): TweetsyApi{
         return retrofit.create(TweetsyApi::class.java)
     }
+
+    // FirebaseAuth instance
+      @Provides
+      @Singleton
+      fun provideFirebaseAuth(): FirebaseAuth = FirebaseAuth.getInstance()
 }
 
