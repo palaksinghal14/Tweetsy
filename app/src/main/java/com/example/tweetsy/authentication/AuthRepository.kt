@@ -23,4 +23,5 @@ class AuthRepository @Inject constructor(
 
     fun logout() = auth.signOut()
     fun isLoggedIn() = auth.currentUser != null
+
 }
